@@ -204,7 +204,7 @@ async def generate_pdf_certificate():
     canvas.drawString(70,135,"Fait à : Gif-sur-Yvette")
     #canvas.drawString(250,145,url)
     canvas.drawString(70,115,"Le : {} ".format(datetime.date.today()))
-    time=str(datetime.datetime.now().time()).split(':')[0]+':'+str(datetime.datetime.now().time()).split(':')[1]
+    time=str(datetime.datetime.now().time()).split(':')[0]+':'+str(datetime.datetime.now().time(timezone.utc)).split(':')[1]
     canvas.drawString(300,115,"à : {} ".format(time))
     canvas.drawString(70,95,"Signature:")
     qrcode_rl = make_qr_code_drawing('https://www.gouvernement.fr/info-coronavirus', 10)
