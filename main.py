@@ -198,7 +198,7 @@ async def generate_pdf_certificate():
     canvas.drawString(70,285,"[  ]  Déplacements pour participer à des missions d'intérêt général sur demande de l'autorité")
     canvas.drawString(70,270,"       administrative")
     #canvas.drawString(70,230,"[  ]  Déplacements liés à des transits pour des déplacements de longues distances")
-    #canvas.drawString(70,190,"[ X ]  Déplacements brefs, dans un rayon maximal d'un kilomètre autour du domicile pour les")
+    canvas.drawString(70,190,"[ X ]  Déplacements brefs, dans un rayon maximal d'un kilomètre autour du domicile pour les")
     canvas.drawString(70,175,"       besoins des animaux de compagnie")
     canvas.drawString(70,135,"Fait à : Paris")
     #canvas.drawString(250,145,url)
