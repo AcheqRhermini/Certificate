@@ -13,6 +13,7 @@ import tempfile
 
 import datetime
 import time
+import time
 
 def make_qr_code_drawing(data, size):
     qr = qrcode.QRCode(
